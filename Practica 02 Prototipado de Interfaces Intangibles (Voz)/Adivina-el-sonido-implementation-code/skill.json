@@ -1,0 +1,72 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-ES": {
+          "summary": "Sample Short Description",
+          "examplePhrases": [
+            "Alexa abre hola mundo",
+            "hola",
+            "ayuda"
+          ],
+          "keywords": [],
+          "name": "Adivina-el-sonido-castolo",
+          "description": "Sample Full Description",
+          "smallIconUri": "file://assets/images/es-ES_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-ES_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:647741240677:function:f2997df3-4c17-4481-93e0-1f950e6f13c9:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:647741240677:function:f2997df3-4c17-4481-93e0-1f950e6f13c9:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:647741240677:function:f2997df3-4c17-4481-93e0-1f950e6f13c9:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:647741240677:function:f2997df3-4c17-4481-93e0-1f950e6f13c9:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "es-ES": {
+          "termsOfUseUrl": "https://www.amazon.com/-/es/gp/help/customer/display.html?ref_\u003dhp_left_v4_sib\u0026nodeId\u003dGLSBYFE9MGKKQXXM",
+          "privacyPolicyUrl": "https://www.amazon.com/-/es/gp/help/customer/display.html?ref_\u003dhp_left_v4_sib\u0026nodeId\u003dGLSBYFE9MGKKQXXM"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}

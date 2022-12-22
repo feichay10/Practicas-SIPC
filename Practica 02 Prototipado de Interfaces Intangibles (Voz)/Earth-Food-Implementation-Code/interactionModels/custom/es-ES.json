@@ -1,0 +1,126 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "earth food",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "no ver la siguiente novedad",
+            "no"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ReleaseIntent",
+          "slots": [],
+          "samples": [
+            "que novedades existen",
+            "que novedades hay",
+            "dime las novedades",
+            "novedades"
+          ]
+        },
+        {
+          "name": "ContinueIntent",
+          "slots": [],
+          "samples": [
+            "avanza",
+            "siguiente novedad",
+            "siguiente",
+            "dime la siguiente novedad",
+            "continua"
+          ]
+        },
+        {
+          "name": "RemindProductIntent",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{message}"
+              ]
+            }
+          ],
+          "samples": [
+            "añade un recordatorio {message}",
+            "añade un recordatorio",
+            "recuerdame {message}",
+            "añadir un recordatorio con {message}"
+          ]
+        },
+        {
+          "name": "AfirmationIntent",
+          "slots": [],
+          "samples": [
+            "me vale",
+            "vale",
+            "si",
+            "sí"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RemindProductIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.988731118483"
+          },
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.988731118483.1336691712568"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.988731118483.1336691712568",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Muy bien, me puedes decir el mensaje que quieres añadir como recordatorio?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Cuál es el mensaje del recordatorio?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.988731118483",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "El mensaje {message} será añadido como recordatorio, desea continuar viendo novedades?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "12"
+}

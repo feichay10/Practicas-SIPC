@@ -1,0 +1,71 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "adivina castolo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "la respuesta es {message}",
+            "el sonido es {message}"
+          ]
+        },
+        {
+          "name": "YesIntent",
+          "slots": [],
+          "samples": [
+            "sí",
+            "si"
+          ]
+        },
+        {
+          "name": "RepeatIntent",
+          "slots": [],
+          "samples": [
+            "repite",
+            "vuelve a repetir"
+          ]
+        },
+        {
+          "name": "PendingIntent",
+          "slots": [],
+          "samples": [
+            "dime las preguntas pendientes",
+            "que preguntas tengo pendientes"
+          ]
+        },
+        {
+          "name": "NextIntent",
+          "slots": [],
+          "samples": [
+            "dime la siguiente"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "3"
+}
